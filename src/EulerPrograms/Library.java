@@ -3,6 +3,7 @@ package EulerPrograms;
 import java.util.HashSet;
 import java.util.Set;
 //import utilities
+//hashset and set are used because they automatically handle duplicates and are faster than lists
 
 public class Library {
     

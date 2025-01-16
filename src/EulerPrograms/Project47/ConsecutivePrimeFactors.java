@@ -2,7 +2,6 @@ package EulerPrograms.Project47;
 
 import EulerPrograms.Library;
 //Import utilities from library
-//Note that we use HashSets and Sets here because they automatically remove duplicates
 
 public class ConsecutivePrimeFactors {
 
