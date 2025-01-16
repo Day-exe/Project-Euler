@@ -6,8 +6,6 @@ Problem:\
 ![image](https://github.com/user-attachments/assets/ddf7b57f-2c57-448e-b636-a2f7889163e3)
 
 Answer:\
-
-First item with a hidden code block
 <details>
   <summary>Example</summary>
 
