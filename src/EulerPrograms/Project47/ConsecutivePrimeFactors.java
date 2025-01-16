@@ -17,6 +17,4 @@ public class ConsecutivePrimeFactors {
 
     }//end main
 
-    
-
 }//end class
