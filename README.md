@@ -1,5 +1,5 @@
 # Project Euler
-### The following is a collection of programs used to solve programs from [projecteuler.net](https://projecteuler.net)
+### The following is a collection of programs used to solve projects from [projecteuler.net](https://projecteuler.net)
 
 ## [Project 47](https://projecteuler.net/problem=47)
 Problem:\
