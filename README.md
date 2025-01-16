@@ -9,9 +9,8 @@ Answer:
 <details>
   <summary>Example</summary>
 
-  ```
   ![image](https://github.com/user-attachments/assets/3520c207-f897-4b6b-a224-d4df76f3d730)
-  ```
+  
 </details>
 
 
