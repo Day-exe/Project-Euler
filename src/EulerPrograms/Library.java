@@ -1,23 +1,11 @@
-package Project47;
+package EulerPrograms;
 
 import java.util.HashSet;
 import java.util.Set;
-//Import utilities
-//Note that we use HashSets and Sets here because they automatically remove duplicates
+//import utilities
 
-public class ConsecutivePrimeFactors {
-
-    public static void main(String[] args) {
-
-        int consecutiveCount = 4; // Number of consecutive integers with distinct prime factors required
-        int startingNumber = 1;   // Start checking from this number
-
-        int firstNumber = findFirstConsecutiveIntegers(consecutiveCount, startingNumber);
-        System.out.println("The first of " + consecutiveCount + " consecutive integers with " +
-                           consecutiveCount + " distinct prime factors each is: " + firstNumber);
-
-    }//end main
-
+public class Library {
+    
     // Function to find the first set of consecutive integers with specified number of distinct prime factors
     public static int findFirstConsecutiveIntegers(int consecutiveCount, int start) {
 
@@ -81,4 +69,4 @@ public class ConsecutivePrimeFactors {
 
     }//end getDistinctPrimeFactors
 
-}//end class
+}
