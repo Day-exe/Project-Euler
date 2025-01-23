@@ -130,4 +130,70 @@ public class Library {
 
     }//end findLargestPrimeFactor
 
+    // Function to find the largest palindrome product of two n-digit numbers
+    public static int findLargestPalindromeProduct(int n) {
+
+        int upperLimit = (int) Math.pow(10, n) - 1; // Largest n-digit number
+        int lowerLimit = (int) Math.pow(10, n - 1); // Smallest n-digit number
+
+        int maxPalindrome = 0;
+
+        for (int i = upperLimit; i >= lowerLimit; i--) {
+
+            for (int j = i; j >= lowerLimit; j--) { // Avoid duplicate pairs
+
+                int product = i * j;
+                if (isPalindrome(product) && product > maxPalindrome) {
+
+                    maxPalindrome = product;
+
+                }
+
+            }
+
+        }
+
+        return maxPalindrome;
+
+    }//end findLargestPalindromeProduct
+
+    // Function to check if a number is a palindrome
+    public static boolean isPalindrome(int number) {
+
+        String str = Integer.toString(number);
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+
+            if (str.charAt(left) != str.charAt(right)) {
+
+                return false;
+
+            }
+            left++;
+            right--;
+
+        }
+
+        return true;
+
+    }//end isPalindrome
+
+    // Function to find the number of blue discs for the first arrangement exceeding a given total
+    public static long findBlueDiscs(long minTotalDiscs) {
+        long b = 15; // Initial number of blue discs
+        long n = 21; // Initial total number of discs
+
+        while (n <= minTotalDiscs) {
+            long nextB = 3 * b + 2 * n - 2;
+            long nextN = 4 * b + 3 * n - 3;
+
+            b = nextB;
+            n = nextN;
+        }
+
+        return b;
+    }//end findBlueDiscs
+
 }//end class
