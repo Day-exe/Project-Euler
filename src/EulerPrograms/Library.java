@@ -70,4 +70,28 @@ public class Library {
 
     }//end getDistinctPrimeFactors
 
-}
+    // Function to calculate the sum of even Fibonacci numbers up to a given limit
+    public static int calculateEvenFibonacciSum(int limit) {
+
+        int a = 1; // First Fibonacci number
+        int b = 2; // Second Fibonacci number
+        int sum = 0;
+
+        while (b <= limit) {
+
+            if (b % 2 == 0) {
+
+                sum += b;
+
+            }
+
+            int next = a + b; // Calculate the next Fibonacci number
+            a = b;
+            b = next;
+        }
+
+        return sum;
+
+    }//end calculateEvenFibonacciSum
+
+}//end class
