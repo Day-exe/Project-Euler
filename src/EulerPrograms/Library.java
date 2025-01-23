@@ -94,4 +94,40 @@ public class Library {
 
     }//end calculateEvenFibonacciSum
 
+    // Function to find the largest prime factor of a given number
+    public static long findLargestPrimeFactor(long number) {
+
+        long largestFactor = -1;
+
+        // Divide out all factors of 2
+        while (number % 2 == 0) {
+
+            largestFactor = 2;
+            number /= 2;
+
+        }
+
+        // Check odd factors
+        for (long i = 3; i * i <= number; i += 2) {
+
+            while (number % i == 0) {
+
+                largestFactor = i;
+                number /= i;
+
+            }
+
+        }
+
+        // If number is still greater than 2, it's a prime factor
+        if (number > 2) {
+
+            largestFactor = number;
+
+        }
+
+        return largestFactor;
+
+    }//end findLargestPrimeFactor
+
 }//end class
